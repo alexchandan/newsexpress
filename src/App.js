@@ -16,7 +16,7 @@ export default function App() {
   let country = 'in';
   let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}&pageSize=${pageSize}`
   return (
-    <BrowserRouter >
+    <BrowserRouter basename="newsexpress" >
       <NavBar />
       <LoadingBar
         color='#f11946'
