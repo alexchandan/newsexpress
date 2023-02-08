@@ -44,7 +44,8 @@ function News(props) {
                 <h2 className='text-center mt-3'>Alex News Express - Top {capitalizeFirstLetter(props.category)} Headlines</h2>
                 {loading && <Loading />}
                 <InfiniteScroll
-                    dataLength={articles.length}
+                    // dataLength={articles.length}
+                    dataLength={10}
                     next={fetchMoreData}
                     hasMore={articles.length !== totalResults}
                     loader={<Loading />}
