@@ -12,7 +12,7 @@ import LoadingBar from 'react-top-loading-bar'
 export default function App() {
   let [progress, setProgress] = useState(0)
   const pageSize = 6;
-  const apiKey = "3d10c86a0b4a4c37bff1191c79aa6ae1"
+  const apiKey = process.env.apiKey;
   let country = 'in';
   let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}&pageSize=${pageSize}`
   return (
